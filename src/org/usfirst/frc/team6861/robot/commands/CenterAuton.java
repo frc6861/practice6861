@@ -29,11 +29,8 @@ public class CenterAuton extends CommandGroup {
         // arm.
     	
     	addSequential(new MoveToSwitchAuton(timeout, driveTrain));
-    	//addSequential(new ForwardTowardsSwitch(1.5, driveTrain));
     	addSequential(new ForwardTowardsSwitch(2, driveTrain));
-    	//addParallel(new Stop3(m_oi));
     	addSequential(new DispenseTimed(timeout2 ,m_oi));
-    	//addSequential(new ConveyorIntakeForward(m_oi))
     	
     }
 }
