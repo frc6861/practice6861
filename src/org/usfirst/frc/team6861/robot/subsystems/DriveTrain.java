@@ -59,7 +59,7 @@ public class DriveTrain extends Subsystem {
 
 	public void initDefaultCommand() {
         // Set the default command for a subsystem here.
-        setDefaultCommand(new DriveWithJoyStick(this,gamePad));
+        //setDefaultCommand(new DriveWithJoyStick(this,gamePad));
         
            }
    
