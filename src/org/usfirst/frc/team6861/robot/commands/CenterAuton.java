@@ -10,7 +10,7 @@ import edu.wpi.first.wpilibj.command.CommandGroup;
  */
 public class CenterAuton extends CommandGroup {
 
-    public CenterAuton(double timeout,DriveTrain driveTrain, OI m_oi, double timeout2 ) {
+    public CenterAuton(double timeout,DriveTrain driveTrain, OI m_oi) {
         // Add Commands here:
         // e.g. addSequential(new Command1());
         //      addSequential(new Command2());
@@ -30,7 +30,7 @@ public class CenterAuton extends CommandGroup {
     	
     	addSequential(new MoveToSwitchAuton(timeout, driveTrain));
     	addSequential(new ForwardTowardsSwitch(2, driveTrain));
-    	addSequential(new DispenseTimed(timeout2 ,m_oi));
+    	addSequential(new DispenseTimed(1 ,m_oi));
     	
     }
 }
