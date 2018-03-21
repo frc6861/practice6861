@@ -39,7 +39,13 @@ public class DispenseTimed extends TimedCommand {
 
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
-        return false;
+        boolean flag=isTimedOut();
+        if(flag) {
+        	conveyor.driveConveyor(0);
+        	shooter.driveShooter(0);
+        }
+        }
+        	
     }
 
     // Called once after isFinished returns true
