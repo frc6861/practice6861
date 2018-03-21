@@ -44,7 +44,7 @@ public class DispenseTimed extends TimedCommand {
         	conveyor.driveConveyor(0);
         	shooter.driveShooter(0);
         }
-        }
+       }
         	
     }
 
