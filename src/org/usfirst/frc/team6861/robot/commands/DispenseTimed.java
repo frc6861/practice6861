@@ -4,7 +4,6 @@ import org.usfirst.frc.team6861.robot.OI;
 import org.usfirst.frc.team6861.robot.subsystems.Conveyor;
 import org.usfirst.frc.team6861.robot.subsystems.Shooter;
 
-import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.TimedCommand;
 
 /**
@@ -44,7 +43,7 @@ public class DispenseTimed extends TimedCommand {
         	conveyor.driveConveyor(0);
         	shooter.driveShooter(0);
         }
-       }
+        return flag;
         	
     }
 
